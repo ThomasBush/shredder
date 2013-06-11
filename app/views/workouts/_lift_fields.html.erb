@@ -1,0 +1,22 @@
+<fieldset class="row-fluid">
+
+  <div class="control-group span2 pull-left">
+    <%= f.label :reps, "Reps", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :reps, :class => 'text_field input-small' %>
+    </div>
+  </div>
+
+  <div class="control-group span2 pull-left">
+    <%= f.label :weight, "Weight", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :weight, :class => 'text_field input-small' %>
+    </div>
+  </div>
+ 
+  <div class="control-group offset1 span2 pull-left">
+    <%= f.hidden_field :_destroy %>
+    <%= link_to "remove", '#', class: "remove_fields btn btn-mini btn-danger" %>
+  </div>
+
+</fieldset>

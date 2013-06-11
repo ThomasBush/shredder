@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Reps:</strong>
+  <%= @lift.reps %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @lift.weight %>
+</p>
+
+<%= link_to 'Edit', edit_lift_path(@lift) %> |
+<%= link_to 'Back', lifts_path %>
